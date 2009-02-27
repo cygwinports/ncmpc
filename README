@@ -1,0 +1,70 @@
+ncmpc
+------------------------------------------
+ncmpc is a curses client for the Music Player Daemon (MPD). ncmpc 
+connects to a MPD running on a machine on the local network, and 
+controls this with an interface inspired by cplay.
+
+Runtime requirements:
+  cygwin-1.5.25-15
+  libglib2.0_0-2.18.4-1
+  libintl8-0.17-2
+  libncurses8-5.5-3
+  mpd-0.14.2-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  autoconf2.5-2.63-1
+  automake1.10-1.10.1-2
+  binutils-20080624-2
+  cygport-0.4.3-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-3
+  gettext-devel-0.17-2
+  make-3.81-1
+  pkg-config-0.23a-2
+  sed-4.1.5-2
+
+Canonical website:
+  http://mpd.wikia.com/wiki/Client:Ncmpc
+
+Canonical download:
+  http://downloads.sourceforge.net/musicpd/
+
+-------------------------------------------
+
+Build instructions:
+  unpack ncmpc-0.13-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./ncmpc-0.13-X.cygport all
+
+This will create:
+  /usr/src/ncmpc-0.13-X-src.tar.bz2
+  /usr/src/ncmpc-0.13-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/ncmpc.exe
+  /usr/share/doc/ncmpc-0.13/AUTHORS
+  /usr/share/doc/ncmpc-0.13/COPYING
+  /usr/share/doc/ncmpc-0.13/INSTALL
+  /usr/share/doc/ncmpc-0.13/NEWS
+  /usr/share/doc/ncmpc-0.13/README
+  /usr/share/doc/ncmpc-0.13/config.sample
+  /usr/share/doc/ncmpc-0.13/keys.sample
+  /usr/share/doc/ncmpc-0.13/ncmpc.lirc
+  /usr/share/man/man1/ncmpc.1.gz
+
+------------------
+
+Port Notes:
+
+----- version 0.13-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/
