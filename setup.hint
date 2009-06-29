@@ -1,5 +1,5 @@
 category: Audio
-requires: cygwin libglib2.0_0 libintl8 libncurses8 mpd
+requires: libglib2.0_0 libintl8 libncurses8 mpd
 sdesc: "Curses client for the Music Player Daemon"
 ldesc: "ncmpc is a curses client for the Music Player Daemon (MPD). 
 ncmpc connects to a MPD running on a machine on the local network, and 
