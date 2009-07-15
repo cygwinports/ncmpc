@@ -1,0 +1,11 @@
+inherit gnome2
+
+DESCRIPTION="Curses client for the Music Player Daemon"
+HOMEPAGE="http://mpd.wikia.com/wiki/Client:Mpc"
+SRC_URI="mirror://sourceforge/musicpd/${P}.tar.bz2"
+PATCH_URI="0.14-gettext.patch"
+
+src_install() {
+	cd ${B}
+	cyginstall MKINSTALLDIRS="/usr/share/automake-1.10/mkinstalldirs"
+}
