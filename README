@@ -5,22 +5,22 @@ connects to a MPD running on a machine on the local network, and
 controls this with an interface inspired by cplay.
 
 Runtime requirements:
-  cygwin-1.7.0-50
-  libgcc1-4.3.2-2
-  libglib2.0_0-2.20.4-1
+  cygwin-1.7.1-1
+  libgcc1-4.3.4-3
+  libglib2.0_0-2.22.4-2
   libintl8-0.17-11
-  libncurses9-5.7-14
-  mpd-0.15-1
+  libmpdclient2-2.1-1
+  libncursesw10-5.7-18
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-10
-  automake1.10-1.10.2-10
+  autoconf2.5-2.65-1
+  automake1.10-1.10.3-1
   binutils-2.19.51-1
-  cygport-0.9.7-1
-  gawk-3.1.6-2
-  gcc4-core-4.3.2-2
-  gnome-common-2.26.0-2
+  cygport-0.9.80-1
+  gawk-3.1.7-1
+  gcc4-core-4.3.4-3
+  gnome-common-2.28.0-1
   gettext-devel-0.17-11
   make-3.81-2
   pkg-config-0.23b-10
@@ -35,49 +35,22 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack ncmpc-0.14-X-src.tar.bz2
+  unpack ncmpc-0.16.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./ncmpc-0.14-X.cygport all
+  cygport ./ncmpc-0.16.1-X.cygport all
 
 This will create:
-  /usr/src/ncmpc-0.14-X-src.tar.bz2
-  /usr/src/ncmpc-0.14-X.tar.bz2
+  /usr/src/ncmpc-0.16.1-X-src.tar.bz2
+  /usr/src/ncmpc-0.16.1-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary package:
-
-  /usr/bin/ncmpc.exe
-  /usr/share/doc/Cygwin/ncmpc.README
-  /usr/share/doc/ncmpc/AUTHORS
-  /usr/share/doc/ncmpc/COPYING
-  /usr/share/doc/ncmpc/NEWS
-  /usr/share/doc/ncmpc/README
-  /usr/share/doc/ncmpc/config.sample
-  /usr/share/doc/ncmpc/keys.sample
-  /usr/share/doc/ncmpc/ncmpc.lirc
-  /usr/share/locale/cs/LC_MESSAGES/ncmpc.mo
-  /usr/share/locale/da/LC_MESSAGES/ncmpc.mo
-  /usr/share/locale/de/LC_MESSAGES/ncmpc.mo
-  /usr/share/locale/es/LC_MESSAGES/ncmpc.mo
-  /usr/share/locale/fr/LC_MESSAGES/ncmpc.mo
-  /usr/share/locale/gl/LC_MESSAGES/ncmpc.mo
-  /usr/share/locale/hu/LC_MESSAGES/ncmpc.mo
-  /usr/share/locale/ko/LC_MESSAGES/ncmpc.mo
-  /usr/share/locale/nb/LC_MESSAGES/ncmpc.mo
-  /usr/share/locale/nl/LC_MESSAGES/ncmpc.mo
-  /usr/share/locale/ru/LC_MESSAGES/ncmpc.mo
-  /usr/share/locale/sk/LC_MESSAGES/ncmpc.mo
-  /usr/share/locale/sv/LC_MESSAGES/ncmpc.mo
-  /usr/share/locale/uk/LC_MESSAGES/ncmpc.mo
-  /usr/share/locale/zh_CN/LC_MESSAGES/ncmpc.mo
-  /usr/share/man/man1/ncmpc.1.gz
-
-------------------
-
 Port Notes:
+
+----- version 0.16.1-1 -----
+Version bump.
 
 ----- version 0.14-1 -----
 Initial release for Cygwin 1.7.
