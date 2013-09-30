@@ -1,0 +1,20 @@
+inherit gnome2
+
+NAME="ncmpc"
+VERSION=0.21
+RELEASE=1
+CATEGORY="Audio"
+SUMMARY="Curses client for the Music Player Daemon"
+DESCRIPTION="ncmpc is a curses client for the Music Player Daemon (MPD). ncmpc
+connects to a MPD running on a machine on the local network, and controls this
+with an interface inspired by cplay."
+HOMEPAGE="http://www.musicpd.org/"
+SRC_URI="http://www.musicpd.org/download/ncmpc/${VERSION%%.*}/ncmpc-${VERSION}.tar.bz2"
+PATCH_URI="0.14-gettext.patch"
+
+DIFF_EXCLUDES="doxygen.conf"
+
+src_install() {
+	cd ${B}
+	cyginstall MKINSTALLDIRS="/usr/share/automake-1.13/mkinstalldirs"
+}
