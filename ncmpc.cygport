@@ -1,7 +1,7 @@
-inherit gnome2
+inherit meson
 
 NAME="ncmpc"
-VERSION=0.27
+VERSION=0.29
 RELEASE=1
 CATEGORY="Audio"
 SUMMARY="Curses client for the Music Player Daemon"
@@ -10,10 +10,3 @@ connects to a MPD running on a machine on the local network, and controls this
 with an interface inspired by cplay."
 HOMEPAGE="http://www.musicpd.org/"
 SRC_URI="http://www.musicpd.org/download/ncmpc/${VERSION%%.*}/ncmpc-${VERSION}.tar.xz"
-
-DIFF_EXCLUDES="doxygen.conf"
-
-src_install() {
-	cd ${B}
-	cyginstall MKINSTALLDIRS="/usr/share/automake-1.15/mkinstalldirs"
-}
